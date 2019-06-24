@@ -1,24 +1,45 @@
-# README
+## Chatroom App
+This is a web application that allows users to create an account send messages in a chatroom. A message can be liked by clicking the heart next to it. Currently, there is only one chatroom.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Background
+This project was created as a part of the immersive web development program at Flatiron School in 2019 by John Agens and Yevgeniy Sobolev. Our goal was to create a basic chat application that would allow users to send messages back and forth in real time.
+ 
+## Demo
+Follow [this link](https://mighty-brook-84043.herokuapp.com/)
+and log in with either
 
-Things you may want to cover:
+**Username: John** <br /> *or* <br />
+**Username: Yev** <br />
+**Password: 123**
 
-* Ruby version
+Or you can create your own account by clicking the Sign Up button on the homescreen.
+You might have to wait a few seconds and refresh to make sure the backend is awake because it's hosted on a free Heroku account.
 
-* System dependencies
+**Video**
 
-* Configuration
+<a href="https://youtu.be/vG-TYezGyTM" target="_blank">![image](https://user-images.githubusercontent.com/19267312/60053428-d3481e80-96a5-11e9-9461-d2ef693ab1b7.png)
+</a>
 
-* Database creation
+## Tech/framework used
 
-* Database initialization
+<b>Built with</b>
+* Rails API backend
+* React Front End
+* JSON web tokens for client-side auth
+* ActionCable web sockets
+* Semantic UI styling 
 
-* How to run the test suite
+## Features
+* Wrote a Ruby on Rails API to manage chatroom, user, and message data.
+* Allowed for real-time chat functionality with ActionCable web sockets.
+* Implemented client-side authentication using JSON web tokens.
+* Designed the front end using the React framework to efficiently manage the DOM.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Installation
+* Clone down this repo <br /> `$ git clone <repo url>`
+* Navigate into the directory <br /> `$ cd dried-fruit-backend`
+* Run `$ bundle install`
+* Run `$ rails db:setup` and `$ rails db:migrate`
+* Run `$ rails server` to boot the backend on port 3000 before starting the frontend to ensure the frontend hits the correct routes.
+* **Clone down and install the [frontend](https://github.com/J-Agens/dried-fruit-frontend#installation).**
 
-* Deployment instructions
-
-* ...
